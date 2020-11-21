@@ -6,8 +6,6 @@ services:
     build:
       dockerfile: dockerfiles/web.Dockerfile
       context: .
-    expose:
-      - 80
     environment:
       - PORT=80
     labels:
