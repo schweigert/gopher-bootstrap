@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      dockerfile: dockerfiles/web.Dockerfile
+      context: .
