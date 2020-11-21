@@ -9,3 +9,5 @@ RUN go mod download
 COPY . .
 
 RUN go install github.com/schweigert/teamwork/cmd/web
+
+CMD [ "web" ]
