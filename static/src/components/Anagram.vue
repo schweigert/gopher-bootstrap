@@ -2,11 +2,11 @@
   <v-card class="mx-auto" color="#26c6da" dark>
     <v-card-title>
       <v-icon large left> mdi-align-vertical-bottom </v-icon>
-      <span class="title font-weight-light">fibo({{ value }}) =</span>
+      <span class="title font-weight-light">anagram({{ a }}, {{ b }}) =</span>
     </v-card-title>
 
     <v-card-text class="headline font-weight-bold">
-      {{ result || "carregando..." }}
+      {{ result }}
     </v-card-text>
   </v-card>
 </template>
@@ -15,7 +15,7 @@
 import axios from "axios";
 
 export default {
-  props: ["value"],
+  props: ["a", "b"],
   data() {
     return {
       result: null,
@@ -27,7 +27,7 @@ export default {
   methods: {
     getDataFromApi() {
       axios
-        .get("/api/fibo", { params: { value: this.value } })
+        .get("/api/anagram", { params: { a: this.a, b: this.b } })
         .then((response) => {
           this.result = response.data;
         })

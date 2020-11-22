@@ -13,7 +13,12 @@ const routes = [
   {
     path: '/fibo',
     name: 'Fibonacci',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Fibo.vue')
+    component: () => import(/* webpackChunkName: "fibo" */ '../views/Fibo.vue')
+  },
+  {
+    path: '/anagram',
+    name: 'Anagram',
+    component: () => import(/* webpackChunkName: "anagram" */ '../views/Anagram.vue')
   }
 ]
 
