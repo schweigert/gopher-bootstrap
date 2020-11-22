@@ -34,6 +34,12 @@ Para executar o servidor:
   go build -o bin/main cmd/web/main.go
   ./bin/main
 ```
+## Somente subir o app
+
+```
+  docker-compose up --build
+  # => Entre em web.localhost
+```
 
 ## Deploy na heroku
 

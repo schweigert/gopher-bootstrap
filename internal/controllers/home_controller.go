@@ -17,6 +17,7 @@ func newHomeController(app *applicationController) *homeController {
 func (controller *homeController) routes() {
 	controller.parent.engine.StaticFile("/", "static/dist/index.html")
 	controller.parent.engine.StaticFile("/favicon.icon", "static/dist/favicon.ico")
+	controller.parent.engine.Static("/img", "static/dist/img")
 	controller.parent.engine.Static("/css", "static/dist/css")
 	controller.parent.engine.Static("/js", "static/dist/js")
 
