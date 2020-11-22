@@ -1,4 +1,4 @@
-module github.com/schweigert/teamwork
+module github.com/schweigert/gopher-bootstrap
 
 go 1.15
 

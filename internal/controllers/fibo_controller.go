@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/schweigert/teamwork/internal/controllers/forms"
-	"github.com/schweigert/teamwork/internal/services"
+	"github.com/schweigert/gopher-bootstrap/internal/controllers/forms"
+	"github.com/schweigert/gopher-bootstrap/internal/services"
 )
 
 type fiboController struct {
