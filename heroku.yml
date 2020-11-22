@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: dockerfiles/web.Dockerfile
+run:
+  web: web

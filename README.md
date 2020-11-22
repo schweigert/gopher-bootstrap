@@ -34,3 +34,11 @@ Para executar o servidor:
   go build -o bin/main cmd/web/main.go
   ./bin/main
 ```
+
+## Deploy na heroku
+
+```
+  heroku login
+  heroku git:remote -a gopher-bootstrap
+  
+```
