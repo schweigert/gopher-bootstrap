@@ -25,6 +25,6 @@ img {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  height: 150px;
+  max-block-size: 75%;
 }
 </style>
