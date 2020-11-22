@@ -3,9 +3,10 @@
     <h1>Seja bem vindo!</h1>
 
     <h2>Aula 01 - Básico</h2>
-
-    <router-link to="/fibo">Fibo</router-link>
-    <router-link to="/anagram">Anagrama</router-link>
+    <ul>
+      <li><router-link to="/fibo">Fibo</router-link></li>
+      <li><router-link to="/anagram">Anagrama</router-link></li>
+    </ul>
   </BasicLayout>
 </template>
 
