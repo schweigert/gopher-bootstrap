@@ -7,6 +7,7 @@
 
     <h2>Aula 01 - Básico</h2>
     <ol>
+      <li><router-link to="/why">Porque golang?</router-link></li>
       <li><router-link to="/install">Instalação</router-link></li>
       <li><router-link to="/compile">Compilação</router-link></li>
       <li><router-link to="/hello">Hello World</router-link></li>
