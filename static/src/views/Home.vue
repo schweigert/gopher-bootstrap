@@ -14,6 +14,7 @@
       <li><router-link to="/funcs">Funções</router-link></li>
       <li><router-link to="/objects">POO</router-link></li>
       <li><router-link to="/tests">Testes Automatizados</router-link></li>
+      <li><router-link to="/packages">Pacotes</router-link></li>
     </ol>
 
     <h2>Aula 02 - Web</h2>

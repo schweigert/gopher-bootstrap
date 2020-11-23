@@ -11,6 +11,10 @@ const routes = [
     component: Home
   },
   {
+    path: '/why',
+    component: () => import(/* webpackChunkName: "why" */ '../views/Why.vue')
+  },
+  {
     path: '/install',
     component: () => import(/* webpackChunkName: "install" */ '../views/Install.vue')
   },
@@ -31,12 +35,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "objects" */ '../views/Objects.vue')
   },
   {
-    path: '/tests',
-    component: () => import(/* webpackChunkName: "tests" */ '../views/Tests.vue')
+    path: '/packages',
+    component: () => import(/* webpackChunkName: "packages" */ '../views/Packages.vue')
   },
   {
-    path: '/why',
-    component: () => import(/* webpackChunkName: "why" */ '../views/Why.vue')
+    path: '/tests',
+    component: () => import(/* webpackChunkName: "tests" */ '../views/Tests.vue')
   },
   {
     path: '/fibo',
