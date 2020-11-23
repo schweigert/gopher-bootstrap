@@ -2,11 +2,7 @@
   <BasicLayout>
     <h1>Anagram</h1>
 
-    <p></p>
-    <p>
-      Cada card realiza uma request para o servidor. Isso significa que, você
-      acabou de realizar 25 requisições.
-    </p>
+    <p>Vamos testar uma página com um número menor de requisições</p>
 
     <v-container>
       <v-row>

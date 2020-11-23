@@ -17,8 +17,11 @@
 
     <h2>Aula 02 - Web</h2>
     <ol>
-      <li><router-link to="/fibo">Fibo</router-link></li>
-      <li><router-link to="/anagram">Anagrama</router-link></li>
+      <li><router-link to="/why">Porque golang?</router-link></li>
+      <ol>
+        <li><router-link to="/fibo">Fibo</router-link></li>
+        <li><router-link to="/anagram">Anagrama</router-link></li>
+      </ol>
     </ol>
   </BasicLayout>
 </template>

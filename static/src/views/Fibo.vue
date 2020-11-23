@@ -2,7 +2,7 @@
   <BasicLayout>
     <h1>Fibo</h1>
 
-    <p>Vamos tentar derrubar o nosso servidor?</p>
+    <p>Vamos testar o desempenho do nosso servidor?</p>
     <p>
       Cada card realiza uma request para o servidor. Isso significa que, você
       acabou de realizar 25 requisições.
