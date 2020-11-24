@@ -24,6 +24,9 @@
         <li><router-link to="/fibo">Fibo</router-link></li>
         <li><router-link to="/anagram">Anagrama</router-link></li>
       </ol>
+      <li>
+        <router-link to="/gin">Um servidor web com Gin</router-link>
+      </li>
     </ol>
   </BasicLayout>
 </template>

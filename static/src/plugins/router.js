@@ -51,6 +51,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "anagram" */ '../views/Anagram.vue')
   },
   {
+    path: '/gin',
+    component: () => import(/* webpackChunkName: "gin" */ '../views/Gin.vue')
+  },
+  {
     path: '/*',
     component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
   }
