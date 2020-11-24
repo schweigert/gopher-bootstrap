@@ -17,3 +17,9 @@ func (suite *MainSuite) TestMain() {
 func TestMainSuite(t *testing.T) {
 	suite.Run(t, &MainSuite{})
 }
+
+func BenchmarkMain(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		main()
+	}
+}
