@@ -1,12 +1,12 @@
 <template>
   <BasicLayout>
     <h1>Hello World</h1>
-    <container>
+    <code>
       <vue-embed-gist
         gist-id="30c1a89799afa5f6ff430c8787645e1f"
         file="hello.go"
       />
-    </container>
+    </code>
     <code> $ go run main.go </code> <br />
   </BasicLayout>
 </template>

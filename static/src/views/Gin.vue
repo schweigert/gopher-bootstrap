@@ -13,12 +13,12 @@
     </p>
 
     <p>Para iniciar um código em golang, basta seguir este exemplo:</p>
-    <container>
+    <code>
       <vue-embed-gist
         gist-id="f57bbfc517a98e53ac3988d74cb85e1d"
         file="gin.go"
       />
-    </container>
+    </code>
     <code> $ go run gin.go </code> <br />
   </BasicLayout>
 </template>

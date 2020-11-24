@@ -1,12 +1,12 @@
 <template>
   <BasicLayout>
     <h1>Testes Automatizados</h1>
-    <container>
+    <code>
       <vue-embed-gist
         gist-id="0b3b524cf053731fab14eebd41f7564f"
         file="fibo_test.go"
       />
-    </container>
+    </code>
     <code> $ go test fibo_test </code> <br />
     <code> $ go test ./... </code> <br />
   </BasicLayout>
