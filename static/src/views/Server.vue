@@ -31,8 +31,8 @@
     </p>
 
     <p>
-      Também existe a configuração para rotas estáticas de css, js e imagens.
-      Ele segue a mesma estrutura do app vue.
+      Além dessas rotas, existem as rotas de API. Para um exemplo básico, temos
+      a API de anagrama e a API de Fibonacci.
     </p>
   </BasicLayout>
 </template>
