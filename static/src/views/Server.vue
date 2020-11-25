@@ -8,6 +8,32 @@
         >Repositório do Github</a
       >
     </p>
+
+    <p>O README.md explica como este app está realizando o deploy na heroku!</p>
+
+    <h2>Servindo um app vue com Golang na Heroku</h2>
+
+    <p>Um servidor web possui "três" comportamentos básicos:</p>
+    <ul>
+      <li>Documentos estáticos</li>
+      <li>Requisições de API</li>
+      <li>Streaming com WebSocket</li>
+    </ul>
+
+    <p>
+      A rota principal desta aplicação, e de qualquer rota de 404 exibe o app
+      vue (arquivos compilados js do app).
+    </p>
+
+    <p>
+      Também existe a configuração para rotas estáticas de css, js e imagens.
+      Ele segue a mesma estrutura do app vue.
+    </p>
+
+    <p>
+      Também existe a configuração para rotas estáticas de css, js e imagens.
+      Ele segue a mesma estrutura do app vue.
+    </p>
   </BasicLayout>
 </template>
 
