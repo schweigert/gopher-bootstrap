@@ -46,4 +46,5 @@ Para executar o servidor:
 ```
   heroku login
   heroku git:remote -a gopher-bootstrap
+  heroku stack:set container
 ```
