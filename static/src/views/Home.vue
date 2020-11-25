@@ -27,6 +27,7 @@
       <li>
         <router-link to="/gin">Um servidor web com Gin</router-link>
       </li>
+      <li><router-link to="/server">Este servidor</router-link></li>
     </ol>
   </BasicLayout>
 </template>
