@@ -1,21 +1,42 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"runtime"
+	"sync"
+)
 
-const buffSize = 1000
+const buffSize = 100
+const maxN = 10_000
+const entries = 50_000
 
 func main() {
 	store := newStore()
 	transport := newTransport(buffSize)
 
-	go newWorker(store, transport).Work()
-	go newWorker(store, transport).Work()
-	go newWorker(store, transport).Work()
-	go newWorker(store, transport).Work()
-	go newWorker(store, transport).Work()
-	go newWorker(store, transport).Work()
+	for i := 0; i < runtime.NumCPU(); i++ {
+		go newWorker(store, transport).Work()
+	}
 
-	task := transport.Put(newTask(1000))
+	tasks := make(chan *task, buffSize)
+	wg := sync.WaitGroup{}
 
-	fmt.Println("fibo(1000):", task.Result())
+	wg.Add(2)
+	defer wg.Wait()
+
+	go func() {
+		defer wg.Done()
+		for i := 0; i < entries; i++ {
+			tasks <- transport.Put(newTask(rand.Uint64() % maxN))
+		}
+	}()
+
+	go func() {
+		defer wg.Done()
+		for i := 0; i < entries; i++ {
+			task := <-tasks
+			fmt.Println("fibo(", task.n, "):", task.Result())
+		}
+	}()
 }
